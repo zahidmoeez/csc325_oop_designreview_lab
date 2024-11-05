@@ -9,16 +9,17 @@ package com.mycompany.csc325_oop_designreview_lab;
  * @author MoaathAlrajab
  */
 public abstract class Human {
-    private String name;
+	private String name;
 	private String address;
 	private short age;
 
-	// constructor that takes only two paras
+	// Constructor
 	public Human(String name, short age) {
 		this.name = name;
 		this.age = age;
 	}
 
+	// Getter and Setter for name
 	public String getName() {
 		return name;
 	}
@@ -27,11 +28,16 @@ public abstract class Human {
 		this.name = name;
 	}
 
-	public abstract String getAddress() ;
+	// Getter and Setter for address
+	public String getAddress() {
+		return address;
+	}
 
-	public abstract void setAddress(String address);
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
-
+	// Getter and Setter for age
 	public short getAge() {
 		return age;
 	}
